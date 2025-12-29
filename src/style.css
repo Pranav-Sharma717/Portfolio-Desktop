@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 overflow-hidden;
+    background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+  }
+  
+  html {
+    background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+  }
+  
+  #app {
+    @apply w-full h-screen;
+    background: transparent;
+  }
+  
+  #root {
+    background: transparent;
+  }
+}
+
+/* Font families */
+.text-reveal-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.text-reveal-motto {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Text reveal animation */
+@keyframes textReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    opacity: 0.5;
+}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0% 0 0);
+}
+}
+
+.text-reveal-heading {
+  animation: textReveal 2s ease-out forwards;
+  opacity: 0;
+}
+
+.text-reveal-motto {
+  animation: textReveal 2s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+/* Desktop background pattern */
+.desktop-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%) !important;
+}
+
+/* Windows 95 style taskbar */
+.taskbar {
+  background: linear-gradient(to bottom, #c0c0c0 0%, #808080 100%);
+  border-top: 2px solid #ffffff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop icon styles */
+.desktop-icon {
+  @apply flex flex-col items-center cursor-pointer transition-transform;
+  @apply hover:scale-110 active:scale-95;
+  width: 80px;
+  text-align: center;
+}
+
+/* Mobile responsive icon styles */
+@media (max-width: 768px) {
+  .desktop-icon {
+    width: 60px;
+  }
+  
+  .desktop-icon .text-5xl {
+    font-size: 2.5rem;
+  }
+  
+  .desktop-icon-label {
+    font-size: 0.65rem;
+    max-width: 60px;
+  }
+}
+
+.desktop-icon-label {
+  @apply text-white text-xs mt-1 px-1 py-0.5 rounded;
+  @apply bg-black bg-opacity-30 backdrop-blur-sm;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  word-break: break-word;
+  max-width: 80px;
+}
+
+/* Window styles */
+.window {
+  @apply bg-white rounded-lg shadow-2xl;
+  @apply border-2 border-gray-300;
+  min-width: 400px;
+  min-height: 300px;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.window-titlebar {
+  @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white;
+  @apply px-3 py-2 flex items-center justify-between;
+  @apply cursor-move select-none;
+  border-radius: 6px 6px 0 0;
+}
+
+.window-content {
+  @apply p-4 overflow-auto;
+  max-height: calc(90vh - 50px);
+}
+
+/* Taskbar button styles */
+.taskbar-button {
+  @apply px-3 py-1 mx-1 rounded;
+  @apply bg-gradient-to-b from-gray-200 to-gray-300;
+  @apply border border-gray-400;
+  @apply hover:bg-gradient-to-b hover:from-gray-300 hover:to-gray-400;
+  @apply active:bg-gradient-to-b active:from-gray-400 active:to-gray-500;
+  @apply transition-all;
+  min-width: 120px;
+  text-align: left;
+}
