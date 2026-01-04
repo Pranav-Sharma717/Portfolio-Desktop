@@ -43,10 +43,10 @@ const TerminalWindow = () => {
   pwd           - Print working directory`;
 
       case 'whoami':
-        return `User: John Doe
-Role: Full Stack Developer
+        return `User: G V Pranav Sharma
+Role: Student 
 Location: Earth
-Interests: Coding, Open Source, Technology
+Interests: Coding, Machine learning, Open Source, Tech and System Thinking.
 Website: localhost:5175`;
 
       case 'show projects':

@@ -19,8 +19,8 @@ const Desktop = () => {
       gyroControls: true,
       minHeight: 200.0,
       minWidth: 200.0,
-      scale: 1.0,
-      scaleMobile: 1.0,
+      scale: 0.25,
+      scaleMobile: 0.25,
       color: 0x3fffe4,
       backgroundColor: 0x0b1020,
     });
@@ -59,7 +59,7 @@ const Desktop = () => {
         <DesktopIcon id="contact" label="Contact" icon="✉️" />
         <DesktopIcon id="terminal" label="Terminal" icon="💻" />
         <DesktopIcon id="blogs" label="Blogs" icon="📝" externalLink="https://your-blog-url.com" />
-        <DesktopIcon id="portfolio" label="Portfolio" icon="🌐" externalLink="https://your-portfolio-url.com" />
+        {/* <DesktopIcon id="portfolio" label="Portfolio" icon="🌐" externalLink="https://your-portfolio-url.com" /> */}
       </div>
     </div>
   );

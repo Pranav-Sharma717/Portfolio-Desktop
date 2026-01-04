@@ -9,25 +9,27 @@ const AboutWindow = () => {
             👤
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-gray-800">John Doe</h2>
-            <p className="text-gray-600">Full Stack Developer</p>
+            <h2 className="text-2xl font-bold text-gray-800">G V Pranav Sharma</h2>
+            <p className="text-gray-600">Student </p>
           </div>
         </div>
 
         <div className="prose max-w-none">
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Bio</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Hello! I'm a passionate full-stack developer with over 5 years of experience
-            building web applications. I love creating beautiful, functional, and user-friendly
-            interfaces that solve real-world problems.
+            I’m a computer science student interested in building reliable, well-understood systems.
+
+            I work across machine learning, full-stack development, and systems, with an emphasis on learning by doing and strengthening fundamentals through real projects. I value clarity, discipline, and steady progress, and
+            I am focused on growing into an engineer who can translate ideas into solutions that actually work.
+
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Skills</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">Technical Skills</h3>
           <div className="flex flex-wrap gap-2 mb-4">
-            {['React', 'TypeScript', 'Node.js', 'Python', 'TailwindCSS', 'PostgreSQL', 'Docker', 'AWS'].map((skill) => (
+            {['C++', 'TypeScript', 'Node.js', 'Python', 'TailwindCSS', 'Express', 'React', 'AWS', 'HTML', 'Javascript', 'Pandas', 'NumPy', 'Scikit-learn', 'PyTorch', 'Flask', 'Git', 'Github', 'MySQL'].map((skill) => (
               <span
                 key={skill}
-                className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium transition-all duration-200 hover:bg-blue-500 hover:text-white hover:scale-110 cursor-pointer"
               >
                 {skill}
               </span>
@@ -36,9 +38,11 @@ const AboutWindow = () => {
 
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Interests</h3>
           <p className="text-gray-700 leading-relaxed">
-            When I'm not coding, I enjoy contributing to open-source projects, reading tech blogs,
-            and exploring new frameworks. I'm always eager to learn and share knowledge with the
-            developer community.
+            My interests sit at the intersection of software engineering, machine learning, systems, and
+            human-centered intelligence. I think in terms of architectures, feedback loops,
+            and constraints—and I care deeply about how ideas move from theory to execution.
+            Reading Tech blogs, System Design, Machine learning and Problem solving takes up most of my time.
+
           </p>
         </div>
       </div>
