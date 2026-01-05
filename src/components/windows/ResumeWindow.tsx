@@ -5,7 +5,7 @@ const ResumeWindow = () => {
     <Window id="resume" title="Resume" defaultWidth={700} defaultHeight={600}>
       <div className="space-y-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-800">John Doe</h2>
+          <h2 className="text-2xl font-bold text-gray-800 flex-1 text-center">G V Pranav Sharma</h2>
           <a
             href="/resume.pdf"
             download
@@ -15,40 +15,72 @@ const ResumeWindow = () => {
           </a>
         </div>
 
+
+
         <div className="prose max-w-none">
-          {/* Experience Section */}
+          {/* About */}
           <section className="mb-6">
             <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
-              Experience
             </h3>
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between items-start mb-1">
-                  <h4 className="font-semibold text-gray-800">Senior Full Stack Developer</h4>
-                  <span className="text-sm text-gray-600">2021 - Present</span>
+                  <h4 className="font-semibold text-gray-800">I am currently pursuing a B.Tech in Computer Science. As a builder driven by curiosity and shaped by discipline, I work
+                    at the intersection of machine learning, systems thinking, and real-world impact. Whether developing intelligent
+                    recommendation engines, sustainable technology, or financial inclusion tools, I approach each project with clarity, intent,
+                    and respect for both the craft and my collaborators.</h4>
                 </div>
-                <p className="text-gray-600 text-sm mb-1">Tech Company Inc.</p>
-                <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
-                  <li>Led development of customer-facing web applications serving 100K+ users</li>
-                  <li>Architected and implemented microservices using Node.js and Docker</li>
-                  <li>Mentored junior developers and conducted code reviews</li>
-                </ul>
-              </div>
-
-              <div>
-                <div className="flex justify-between items-start mb-1">
-                  <h4 className="font-semibold text-gray-800">Full Stack Developer</h4>
-                  <span className="text-sm text-gray-600">2019 - 2021</span>
-                </div>
-                <p className="text-gray-600 text-sm mb-1">Startup Solutions</p>
-                <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
-                  <li>Developed responsive web applications using React and TypeScript</li>
-                  <li>Built RESTful APIs and integrated third-party services</li>
-                  <li>Collaborated with design team to implement pixel-perfect UIs</li>
-                </ul>
               </div>
             </div>
           </section>
+          {/* Certifications */}
+          <section>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
+              Certifications
+            </h3>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Supervised Machine Learning Deeplearning.AI (2025)</li>
+              <li>Deep Learning NPTEL(2025)</li>
+              <li>Responsive Web Design (2024)</li>
+              <li>Python Programming HackerRank (2024)</li>
+              <li>Google Analytics Google (2024)</li>
+            </ul>
+          </section>
+          {/* Experience Section */}
+          <div>
+            <section className="mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
+                Experience
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between items-start mb-1">
+                    <h4 className="font-semibold text-gray-800">Web and Social Media Content Developer and Digital Marketing Intern</h4>
+                    <span className="text-sm text-gray-600">Nov 2023 - Feb 2024</span>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-1">DreamSoft4uPvt. Ltd.</p>
+                  <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                    <li>Specialized in website content development and social media management</li>
+                    <li>Handled content posting and schema codes for healthcare website(Kayawell)</li>
+                    <li>Drove the company’s all-time highest social media engagement.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-start mb-1">
+                    <h4 className="font-semibold text-gray-800">Full Stack Developer</h4>
+                    <span className="text-sm text-gray-600">2019 - 2021</span>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-1">Startup Solutions</p>
+                  <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
+                    <li>Developed responsive web applications using React and TypeScript</li>
+                    <li>Built RESTful APIs and integrated third-party services</li>
+                    <li>Collaborated with design team to implement pixel-perfect UIs</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
 
           {/* Education Section */}
           <section className="mb-6">
@@ -64,17 +96,7 @@ const ResumeWindow = () => {
             </div>
           </section>
 
-          {/* Certifications */}
-          <section>
-            <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">
-              Certifications
-            </h3>
-            <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li>AWS Certified Solutions Architect (2023)</li>
-              <li>Google Cloud Professional Cloud Architect (2022)</li>
-              <li>MongoDB Certified Developer (2021)</li>
-            </ul>
-          </section>
+
         </div>
 
         {/* Note about PDF */}

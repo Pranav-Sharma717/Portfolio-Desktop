@@ -41,7 +41,7 @@ const AboutWindow = () => {
             My interests sit at the intersection of software engineering, machine learning, systems, and
             human-centered intelligence. I think in terms of architectures, feedback loops,
             and constraints—and I care deeply about how ideas move from theory to execution.
-            Reading Tech blogs, System Design, Machine learning and Problem solving takes up most of my time.
+            Reading Tech blogs, learning about System Design, Machine learning and Problem solving takes up most of my time.
 
           </p>
         </div>
