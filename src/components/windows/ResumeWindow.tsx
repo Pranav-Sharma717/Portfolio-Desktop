@@ -66,7 +66,7 @@ const ResumeWindow = () => {
                   </ul>
                 </div>
 
-                <div>
+                {/* <div>
                   <div className="flex justify-between items-start mb-1">
                     <h4 className="font-semibold text-gray-800">Full Stack Developer</h4>
                     <span className="text-sm text-gray-600">2019 - 2021</span>
@@ -77,7 +77,7 @@ const ResumeWindow = () => {
                     <li>Built RESTful APIs and integrated third-party services</li>
                     <li>Collaborated with design team to implement pixel-perfect UIs</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </section>
           </div>
