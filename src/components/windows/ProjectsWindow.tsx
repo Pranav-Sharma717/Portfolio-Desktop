@@ -13,9 +13,9 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    title: 'Product Recommendation System for E-commerce website',
+    description: 'An E-commerce website with integrated content based filtering recommendation system. Along with implementation of different types of recommendation systems',
+    tech: ['Html', 'CSS', 'MySQL', 'Flask', 'JavaScript', 'Python'],
     image: '🛒',
     link: 'https://example.com',
     github: 'https://github.com/example',
