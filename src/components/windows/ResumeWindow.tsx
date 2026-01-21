@@ -90,9 +90,9 @@ const ResumeWindow = () => {
             <div>
               <div className="flex justify-between items-start mb-1">
                 <h4 className="font-semibold text-gray-800">Bachelor of Science in Computer Science</h4>
-                <span className="text-sm text-gray-600">2015 - 2019</span>
+                <span className="text-sm text-gray-600">2023 - 2027</span>
               </div>
-              <p className="text-gray-600 text-sm">University of Technology</p>
+              <p className="text-gray-600 text-sm">Vellore Institute of Technology Bhopal</p>
             </div>
           </section>
 
