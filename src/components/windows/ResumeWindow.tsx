@@ -62,7 +62,7 @@ const ResumeWindow = () => {
                   <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 ml-4">
                     <li>Specialized in website content development and social media management</li>
                     <li>Handled content posting and schema codes for healthcare website(Kayawell)</li>
-                    <li>Drove the company’s all-time highest social media engagement.</li>
+                    <li>Drove the company's all-time highest social media engagement.</li>
                   </ul>
                 </div>
 
